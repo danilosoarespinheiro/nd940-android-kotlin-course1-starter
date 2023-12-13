@@ -6,14 +6,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".onboarding.OnboardingFragment">
+        tools:context=".onboarding.InstructionsFragment">
 
         <TextView
             android:id="@+id/textViewExample"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="131dp"
-            android:text="@string/text_of_onboarding"
+            android:text="@string/text_of_information"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="79dp"
-            android:text="@string/another_text_of_onboarding"
+            android:text="@string/another_text_of_information"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewExample" />

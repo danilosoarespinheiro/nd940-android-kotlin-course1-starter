@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">ShoeStore</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_account">New Account</string>
+    <string name="text_of_onboarding">This is an example of text of onboarding</string>
+    <string name="another_text_of_onboarding">Here we have another example of onboarding text</string>
+    <string name="text_of_information">This is an example of text of information text</string>
+    <string name="another_text_of_information">Here we have another example of information text</string>
+    <string name="proceed">Proceed</string>
+    <string name="shoe_info">Shoe Info</string>
 </resources>
