@@ -11,6 +11,7 @@ import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentInstructionsBinding
 import com.udacity.shoestore.view.InstructionsFragmentDirections.fromInstructionsToShoesList
 
+
 class InstructionsFragment : Fragment() {
 
     private lateinit var binding: FragmentInstructionsBinding

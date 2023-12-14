@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.LinearLayout
+import androidx.activity.OnBackPressedCallback
 import androidx.core.view.MenuProvider
 import androidx.databinding.DataBindingUtil.inflate
 import androidx.fragment.app.Fragment
@@ -25,6 +26,7 @@ import com.udacity.shoestore.view.ShoeListFragmentDirections.fromShoesListToLogi
 import com.udacity.shoestore.view.ShoeListFragmentDirections.fromShoesListToShoeDetails
 import com.udacity.shoestore.viewmodel.ShoeViewModel
 
+
 class ShoeListFragment : Fragment() {
 
     private lateinit var showViewModel: ShoeViewModel
@@ -37,6 +39,14 @@ class ShoeListFragment : Fragment() {
         addMenu()
         addObservers(inflater)
         addClickListeners()
+
+        val callback: OnBackPressedCallback =
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    findNavController().navigate(fromShoesListToLogin())
+                }
+            }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
         return binding.root
     }
 
@@ -86,6 +96,14 @@ class ShoeListFragment : Fragment() {
                 }
                 return true
             }
+
+            override fun onPrepareMenu(menu: Menu) {
+                super.onPrepareMenu(menu)
+                val item = menu.findItem(R.id.logout)
+                item.isVisible = true
+            }
         })
     }
+
+
 }

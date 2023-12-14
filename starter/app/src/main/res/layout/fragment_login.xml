@@ -23,7 +23,7 @@
         <EditText
             android:id="@+id/editTextPassword"
             style="@style/EditTextStyle"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/medium_margin"
             android:hint="@string/password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
@@ -35,11 +35,9 @@
 
         <TextView
             android:id="@+id/textViewEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="@dimen/large_margin"
             android:text="@string/email"
-            android:textSize="18sp"
+            style="@style/LabelTextStyle"
             app:layout_constraintBaseline_toBaselineOf="@+id/editTextEmail"
             app:layout_constraintEnd_toStartOf="@+id/editTextEmail"
             app:layout_constraintHorizontal_bias="0.383"
@@ -47,11 +45,10 @@
 
         <TextView
             android:id="@+id/textViewPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            style="@style/LabelTextStyle"
+            android:layout_marginStart="@dimen/large_margin"
             android:text="@string/password"
-            android:textSize="18sp"
+
             app:layout_constraintBaseline_toBaselineOf="@+id/editTextPassword"
             app:layout_constraintEnd_toStartOf="@+id/editTextPassword"
             app:layout_constraintHorizontal_bias="0.383"
