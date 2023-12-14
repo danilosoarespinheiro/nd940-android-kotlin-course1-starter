@@ -35,13 +35,13 @@ Open the starter project in Android Studio
 6. Create a new Welcome screen destination that includes:
 
    * A new layout
-   * At least 2 textviews
+   * At least 2 textview
    * A navigation button with actions to navigate to the instructions screen
 
 7. Create a new Instruction destination that includes:
 
    * A new layout
-   * At least 2 textviews
+   * At least 2 textview
    * A navigation button with actions to navigate to the shoe list screen
 
 8. Create a class that extends ViewModel

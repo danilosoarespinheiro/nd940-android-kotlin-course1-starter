@@ -1,14 +1,26 @@
 <resources>
     <string name="app_name">ShoeStore</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="new_account">New Account</string>
-    <string name="text_of_onboarding">This is an example of text of onboarding</string>
-    <string name="another_text_of_onboarding">Here we have another example of onboarding text</string>
-    <string name="text_of_information">This is an example of text of information text</string>
-    <string name="another_text_of_information">Here we have another example of information text</string>
+    <string name="text_of_onboarding">This is an example of text of onboarding.</string>
+    <string name="another_text_of_onboarding">Here we have another example of onboarding text.</string>
+    <string name="text_of_information">This is an example of text of information.</string>
+    <string name="another_text_of_information">Here we have another example of information text.</string>
     <string name="proceed">Proceed</string>
     <string name="shoe_info">Shoe Info</string>
+    <string name="log_out">Log out</string>
+    <string name="shoe_image">Shoe Image</string>
+    <string name="tools_text_description">Description</string>
+    <string name="tools_text_size">Size</string>
+    <string name="tools_text_brand">Brand</string>
+    <string name="tools_text_name">Name</string>
+    <string name="tools_text_company">Company</string>
+    <string name="shoes_item_name">Name: %1$s </string>
+    <string name="shoes_item_size">Size: %1$s</string>
+    <string name="shoes_item_company">Brand: %1$s</string>
+    <string name="shoes_item_description">Description: %1$s</string>
+    <string name="button_save_shoe">Save</string>
+    <string name="button_cancel_shoe">Cancel</string>
 </resources>

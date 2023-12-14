@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.udacity.shoestore.ShoeListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_background"
+        android:padding="@dimen/small_padding">
+
+        <ImageView
+            android:id="@+id/imageViewShoe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/small_margin"
+            android:contentDescription="@string/shoe_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_shopping_basket_24" />
+
+        <TextView
+            android:id="@+id/textViewShoeName"
+            style="@style/shoesListStyle"
+            android:layout_marginStart="@dimen/medium_margin"
+            app:layout_constraintBottom_toTopOf="@+id/textViewCompany"
+            app:layout_constraintStart_toEndOf="@+id/imageViewShoe"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/tools_text_name" />
+
+        <TextView
+            android:id="@+id/textViewCompany"
+            style="@style/shoesListStyle"
+            app:layout_constraintBottom_toTopOf="@+id/textViewShoeSize"
+            app:layout_constraintStart_toStartOf="@+id/textViewShoeName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewShoeName"
+            tools:text="@string/tools_text_brand" />
+
+        <TextView
+            android:id="@+id/textViewShoeSize"
+            style="@style/shoesListStyle"
+            app:layout_constraintBottom_toTopOf="@+id/textViewShoeDescription"
+            app:layout_constraintStart_toStartOf="@+id/textViewShoeName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCompany"
+            tools:text="@string/tools_text_size" />
+
+        <TextView
+            android:id="@+id/textViewShoeDescription"
+            style="@style/shoesListStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewShoeName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewShoeSize"
+            tools:text="@string/tools_text_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
