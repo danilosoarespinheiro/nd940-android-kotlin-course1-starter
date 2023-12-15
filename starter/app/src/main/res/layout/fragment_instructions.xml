@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--  Here the layout seems pretty much Linear, so Linear Layout also could be
+     a smart choice. Personally I've choose Constraint layout to maintain the screen
+     configuration in different devices.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

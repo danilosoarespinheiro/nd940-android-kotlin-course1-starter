@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".view.ShoeListFragment">
 
+    <!--Constraint Layout was used here to add the Floating Action Button above the layout.
+    And inside the ScrollVIew there's a much simpler layout which holds the fragment_shoe_detail.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

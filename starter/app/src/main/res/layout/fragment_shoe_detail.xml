@@ -10,6 +10,9 @@
             type="com.udacity.shoestore.view.ShoeDetailFragment" />
     </data>
 
+    <!-- Constraint Layout was used here to align buttons and labels using baseline and
+     a chain vertical for the EditTexts made easier do make some adjustments. It was
+     used also to add buttons without using nested layouts-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

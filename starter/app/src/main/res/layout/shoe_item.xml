@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.udacity.shoestore.ShoeListFragment">
 
+    <!--Normally Linear Layout is a good option to layouts like this but I prefer using
+    Constraints to align the image without nesting layouts-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

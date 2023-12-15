@@ -2,6 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Used Constraint layout basically to connect  the Fragment Container
+    View to the bottom of  appBarLayout. In this case I could've used a LinearLayout
+    to assemble this layout, but it was a personal choice.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
