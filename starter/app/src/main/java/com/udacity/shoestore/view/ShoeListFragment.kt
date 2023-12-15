@@ -31,6 +31,7 @@ class ShoeListFragment : Fragment() {
 
     private lateinit var showViewModel: ShoeViewModel
     private lateinit var binding: FragmentShoeListBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
@@ -104,6 +105,4 @@ class ShoeListFragment : Fragment() {
             }
         })
     }
-
-
 }

@@ -6,6 +6,12 @@
     <data>
 
         <variable
+            name="ShoeListViewModel"
+            type="com.udacity.shoestore.viewmodel.ShoeViewModel" />
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+        <variable
             name="shoeDetail"
             type="com.udacity.shoestore.view.ShoeDetailFragment" />
     </data>
@@ -28,7 +34,7 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:minHeight="@dimen/min_height"
-            android:text="@={shoeDetail.shoe.name}"
+            android:text="@={shoe.name}"
             app:layout_constraintBottom_toTopOf="@+id/editTextCompany"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -38,6 +44,7 @@
             android:id="@+id/editTextShoeSize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@={shoe.size}"
             android:layout_marginStart="124dp"
             android:layout_marginTop="@dimen/small_margin"
             android:ems="10"
@@ -61,7 +68,7 @@
             android:inputType="text"
             android:minHeight="@dimen/min_height"
             android:minLines="3"
-            android:text="@={shoeDetail.shoe.description}"
+            android:text="@={shoe.description}"
             app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeSize" />
@@ -77,7 +84,7 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:minHeight="@dimen/min_height"
-            android:text="@={shoeDetail.shoe.company}"
+            android:text="@={shoe.company}"
             app:layout_constraintBottom_toTopOf="@+id/editTextShoeSize"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeName" />
@@ -87,6 +94,7 @@
             style="@style/ButtonsStyle"
             android:layout_marginStart="84dp"
             android:text="@string/button_cancel_shoe"
+            android:onClick="@{() -> ShoeListViewModel.onCancel()}"
             app:layout_constraintBaseline_toBaselineOf="@+id/buttonSave"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -95,6 +103,7 @@
             style="@style/ButtonsStyle"
             android:layout_marginBottom="250dp"
             android:text="@string/button_save_shoe"
+            android:onClick="@{() -> ShoeListViewModel.addNewShoe(shoe)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonCancel"
